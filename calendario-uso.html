@@ -10,8 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Slidebars-2.0.2/dev/slidebars.css">
-    <script src="Slidebars-2.0.2/dev/slidebars.js"></script>
+    <link rel="stylesheet" href="js/Slidebars-2.0.2/dev/slidebars.css">
+    <script src="js/Slidebars-2.0.2/dev/slidebars.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -103,18 +103,18 @@
 
 
                 <div class="row justify-content-center">
-                    <div class="col-3 ">
-                        <label for="ingreso" class="labLog">Usuario o e-mail
+                    <div class="col-3">
+                        <label for="ingreso" class="labLog" id="labIng">Usuario o e-mail
                         <input type="text" id="ingreso" name="ingreso" placeholder="Usuario o e-mail" class="inLogin"></label>
                     </div>
-                    <div class="col-3 ">
-                        <label for="password" class="labLog">Password
+                    <div class="col-3">
+                        <label for="password" class="labLog" id="labPas">Password
                         <input type="password" id="password" name="password" placeholder="Password" class="inLogin"></label>
                     </div>
                     <div>
                         <input type="submit" value="Ingresar" id="ingresar">
                     </div>
-                    <div>
+                    <div id="checkRec">
                         <label for="recordar" id="labRecordar">Recordar clave
                         <input type="checkbox" id="checkboxLog" name="recordar">
                         </label>
