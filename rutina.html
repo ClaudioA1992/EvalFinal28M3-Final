@@ -26,67 +26,109 @@
 <body>
     <div canvas="container">
 
-        <h1 id="titRut">Generador de rutinas</h1>
-        <div id="multiDate" class="row justify-content-center">
+        <div class="wrapper">
+
+            <header>
+                <div class="nav-content">
+                    <div class="menu_bar">
+                        <a href="#" class="bt-menu">Menú</a>
+                    </div>
+                    <nav>
+                        <ul class="nav-list">
+                            <li><a href="/"><span ></span>Inicio</a></li>
+                            <li><a href="quienes-somos.html"><span ></span>Quiénes somos</a></li>
+                            <li><a href="lista.html"><span ></span>Listas</a></li>
+                            <li><a href="calendario.html"><span ></span>Calendario</a></li>
+                            <li><a href="rutina.html"><span ></span>Rutinas</a></li>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span ></span>Modo de uso</a>
+                                <div class="dropdown-menu">
+                                    <a href="lista-uso.html" class="dropdown-item">Listas</a>
+                                    <a href="calendario-uso.html" class="dropdown-item">Calendario</a>
+                                </div>
+                            </div>
+                        </ul>
+
+                        <ul class="login">
+                            <li><a href="#" id="sld3">Login</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+            </header>
+
+            <main>
+                <h1 id="titRut">Generador de rutinas</h1>
+                <div id="multiDate" class="row justify-content-center">
+
+                </div>
+                <div class="row justify-content-center" id="opGen">
+                    <div class="col-5 ">
+                        <ul class="lisGen">
+                            <!--<li>
+                    <div id="semana">
+                        <label for="semana"> Semana
+            <input type="week" name="semana">
+            <p>Selecciona la semana en la que quieres modelar tu rutina</p>
+        </label>
+                    </div>
+                </li>-->
+
+                            <li>
+                                <div>
+                                    <label for="hora"> Hora de inicio diaria
+            <input type="time" name="hora">
+        </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="hora"> Hora de término diaria
+            <input type="time" name="hora">
+        </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="fecha"> Fecha de término de rutina
+            <input type="date" name="fecha">
+        </label>
+                                </div>
+                            </li>
+                            <!--<li>
+                    <div>
+                        <label for="num"> Número de repeticiones
+            <input type="number" name="num" min="0" max="50">
+        </label>
+                    </div>
+                </li>-->
+                        </ul>
+                    </div>
+                    <div class="col-5">
+                        <ul class="lisGen">
+                            <li>
+                                Define la hora de inicio de la actividad durante el día
+                            </li>
+                            <li>
+                                Define la hora de término de la actividad durante el día
+                            </li>
+                            <li>
+                                Define la fecha de término de la rutina
+                            </li>
+                        </ul>
+                    </div>
+                    <p>Trabajamos para crea la opción de repetir una ruina a través de la elección de los días en una semana, y para generar rutinas con lapsos intercalados.</p>
+                </div>
+            </main>
+
+            <footer class="container-fluid">
+                <p>Desarrollado por: Claudio Torres, Pamela Machino y Jaime Reyes</p>
+                <p>Junio 2020, Todos los derechos reservados.</p>
+            </footer>
 
         </div>
-        <div class="row justify-content-center" id="opGen">
-            <div class="col-5 ">
-                <ul class="lisGen">
-                    <!--<li>
-                <div id="semana">
-                    <label for="semana"> Semana
-        <input type="week" name="semana">
-        <p>Selecciona la semana en la que quieres modelar tu rutina</p>
-    </label>
-                </div>
-            </li>-->
 
-                    <li>
-                        <div>
-                            <label for="hora"> Hora de inicio diaria
-        <input type="time" name="hora">
-    </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label for="hora"> Hora de término diaria
-        <input type="time" name="hora">
-    </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <label for="fecha"> Fecha de término de rutina
-        <input type="date" name="fecha">
-    </label>
-                        </div>
-                    </li>
-                    <!--<li>
-                <div>
-                    <label for="num"> Número de repeticiones
-        <input type="number" name="num" min="0" max="50">
-    </label>
-                </div>
-            </li>-->
-                </ul>
-            </div>
-            <div class="col-5">
-                <ul class="lisGen">
-                    <li>
-                        Define la hora de inicio de la actividad durante el día
-                    </li>
-                    <li>
-                        Define la hora de término de la actividad durante el día
-                    </li>
-                    <li>
-                        Define la fecha de término de la rutina
-                    </li>
-                </ul>
-            </div>
-            <p>Trabajamos para crea la opción de repetir una ruina a través de la elección de los días en una semana, y para generar rutinas con lapsos intercalados.</p>
-        </div>
     </div>
 
     <script>
