@@ -53,6 +53,10 @@ h1 {
     margin-bottom: 5vh;
 }
 
+#textoInd {
+    color: rgb(184, 234, 197);
+}
+
 .menu_bar {
     display: none;
 }
@@ -332,10 +336,11 @@ footer p {
 
 #ingresar {
     height: 20px;
-    font-size: 13px;
+    font-size: 12px;
     width: 100px;
     margin-top: 15px;
     margin-left: 15px;
+    line-height: 1px;
 }
 
 #hlogin {
